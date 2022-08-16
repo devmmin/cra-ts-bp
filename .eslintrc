@@ -29,6 +29,8 @@
     }
   },
   "rules": {
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "prettier/prettier": [
       "error",
       {
@@ -42,17 +44,19 @@
         "arrowParens": "avoid"
       }
     ],
+    "import/no-unresolved": "off",
     "import/extensions": ["off"],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "react/jsx-filename-extension": [
       2,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react/require-default-props": [2, { "ignoreFunctionalComponents": true }],
-    "@typescript-eslint/explicit-module-boundary-types": "off",
     "linebreak-style": "off",
-    "object-curly-newline": "off",
-    "import/no-unresolved": "off"
+    "object-curly-newline": "off"
   }
 }
